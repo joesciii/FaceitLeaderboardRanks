@@ -2,19 +2,19 @@
 
 A CounterStrikeSharp plugin that retrieves and displays FACEIT levels for players when they join the server.
 
+WIP to display these ranks in the leaderboard, similar to cs2-ranks.
+
 ## Features
 
 - Automatically detects players' SteamIDs when they join the server
 - Fetches FACEIT level information from the FACEIT API
 - Displays FACEIT level to the player and optionally to all players on the server
-- Handles cases where players don't have FACEIT accounts
 - Configurable settings for notifications and minimum level announcements
 
 ## Requirements
 
-- CounterStrikeSharp installed on your CS2 server
-- .NET 8.0 runtime
-- FACEIT API key (included in the plugin)
+- CounterStrikeSharp
+- FACEIT API key
 
 ## Installation
 
@@ -35,7 +35,7 @@ The plugin creates a default configuration file at `csgo/addons/counterstrikesha
 }
 ```
 
-- `FaceitApiKey`: Your FACEIT API key (a default one is provided)
+- `FaceitApiKey`: Your FACEIT API key 
 - `NotifyAllPlayers`: Whether to announce a player's FACEIT level to all players (true/false)
 - `MinimumLevelToAnnounce`: The minimum FACEIT level required to announce to all players (0-10)
 
@@ -55,12 +55,3 @@ The plugin works automatically:
 2. Make sure you have .NET 8.0 SDK installed
 3. Run `dotnet build` to build the plugin
 4. Copy the compiled DLL to your `csgo/addons/counterstrikesharp/plugins` directory
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgements
-
-- CounterStrikeSharp for providing the CS2 plugin framework
-- FACEIT for providing the API to retrieve player information 
