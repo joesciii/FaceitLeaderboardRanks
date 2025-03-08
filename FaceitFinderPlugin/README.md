@@ -29,7 +29,7 @@ The plugin creates a default configuration file at `csgo/addons/counterstrikesha
 
 ```json
 {
-  "FaceitApiKey": "204dd3fe-1ce5-451b-a7f8-76a8e0dcc786",
+  "FaceitApiKey": "keyhere",
   "NotifyAllPlayers": true,
   "MinimumLevelToAnnounce": 0
 }
